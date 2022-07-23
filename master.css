@@ -15,6 +15,7 @@
     --clr-text: hsl(220, 15%, 55%);
 
     --mobile-size:  90vw;
+    --tablet-size:  62vw;
     --desktop-size: 25vw;
 }
 
@@ -72,18 +73,16 @@ img {
 
 .attribution {
     font-size: 1.1rem;
-
-    position: absolute;
-    bottom: 10px;
+    margin: 2rem;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
     main {
-        width: 62vw;
+        width: var(--tablet-size);
     }
 }
 
